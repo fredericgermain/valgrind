@@ -1,0 +1,3 @@
+[submodule "VEX"]
+	path = VEX
+	url = https://github.com/fredericgermain/vex.git
