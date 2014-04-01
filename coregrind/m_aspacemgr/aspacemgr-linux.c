@@ -1638,7 +1638,8 @@ Addr VG_(am_startup) ( Addr sp_at_startup )
    aspacem_cStart = aspacem_minAddr;
    aspacem_vStart = 0xf0000000;  // 0xc0000000..0xf0000000 available
 # else
-   aspacem_minAddr = (Addr) 0x100000000;  // 4GB page zero
+   aspacem_minAddr = (Addr) 0x00001000;
+ //  aspacem_minAddr = (Addr) 0x100000000;  // 4GB page zero
    aspacem_maxAddr = (Addr) 0x7fffffffffff;
 
    aspacem_cStart = aspacem_minAddr;
